@@ -1,0 +1,26 @@
+.worksBlock {
+    background-color: #dcdcdc;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.worksContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    background-color: #bfbebe;
+}
+
+.works {
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+

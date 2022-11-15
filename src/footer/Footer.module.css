@@ -1,0 +1,35 @@
+.footerBlock {
+    height: 30vh;
+    background-color: #bfbebe;
+}
+
+.text {
+    width: 300px;
+    color: white;
+    text-align: center;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.imgContainer{
+    min-width: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.image1 {
+    width: 60px;
+    height: 60px;
+    background-color: #bfbebe;
+}
+
+.image2 {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+}

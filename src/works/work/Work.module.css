@@ -1,0 +1,34 @@
+.work {
+    width: 250px;
+    min-height: 250px;
+    background-image: url("https://png.pngtree.com/png-vector/20190214/ourlarge/pngtree-vector-gallery-icon-png-image_515223.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.imgShow{
+    background-color: black;
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    border: 1px solid #3b3b3b;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    color: white;
+}

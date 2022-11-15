@@ -1,0 +1,16 @@
+.mainBlock {
+    height: 30vh;
+    background-color: #bfbebe;
+}
+
+.text {
+    width: 300px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

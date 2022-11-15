@@ -1,0 +1,20 @@
+.mainBlock {
+    height: 100vh;
+    background-color: #bfbebe;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.greetingText {
+    width: 300px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
