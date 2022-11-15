@@ -1,6 +1,10 @@
 .contactsBlock {
-    background-color: #d3d3d3;
-    height: 100vh;
+    background-color: #dedede;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .contactsContainer {
@@ -10,6 +14,7 @@
 }
 
 .container {
+    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: space-evenly;

@@ -1,6 +1,7 @@
 .work {
     width: 250px;
     min-height: 250px;
+    border: 1px solid black;
     background-image: url("https://png.pngtree.com/png-vector/20190214/ourlarge/pngtree-vector-gallery-icon-png-image_515223.jpg");
     background-size: cover;
     background-position: center;

@@ -3,7 +3,7 @@ import './App.css';
 import Header from "./header/Header";
 import DistantWork from "./distantWork/DistantWork";
 import Skills from "./skills/Skills";
-import Works from "./works/Works";
+import Projects from "./projects/Projects";
 import Main from "./main/Main";
 import Contacts from "./contacts/Contacts";
 import Footer from "./footer/Footer";
@@ -14,7 +14,7 @@ function App() {
             <Header/>
             <Main/>
             <Skills/>
-            <Works/>
+            <Projects/>
             <DistantWork />
             <Contacts/>
             <Footer/>

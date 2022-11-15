@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import style from './Work.module.css'
+import style from './Project.module.css'
 
 
-const Work = (props) => {
+const Project = (props) => {
     const [show, setShow] = useState(false)
     const onMouseEnter = () => {
         setShow(true)
@@ -36,4 +36,4 @@ const Work = (props) => {
         ;
 }
 
-export default Work;
+export default Project;

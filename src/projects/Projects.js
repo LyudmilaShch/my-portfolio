@@ -1,29 +1,29 @@
 import React from 'react';
-import style from './Works.module.css'
+import style from './Projects.module.css'
 import styleContainer from '../common/styles/WhiteContainer.module.css'
-import Work from './work/Work';
+import Project from './project/Project';
 
 
-const Works = () => {
+const Projects = () => {
     return (
         <div className={style.worksBlock}>
             <div className={`${styleContainer.container} ${style.worksContainer}`}>
-                <h2 className={style.title}>Мои работы</h2>
+                <h2 className={style.title}>Мои проекты</h2>
                 <div className={style.works}>
-                    <Work
+                    <Project
                         title={'Название проекта'}
                         description={'Краткое описание'}
                     />
-                    <Work
+                    <Project
                         title={'Название проекта'}
                         description={'Краткое описание'}
                     />
 
-                    <Work
+                    <Project
                         title={'Название проекта'}
                         description={'Краткое описание'}
                     />
-                    <Work
+                    <Project
                         title={'Название проекта'}
                         description={'Краткое описание'}
                     />
@@ -34,4 +34,4 @@ const Works = () => {
     );
 }
 
-export default Works;
+export default Projects;
