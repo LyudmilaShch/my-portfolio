@@ -8,7 +8,14 @@ const Projects = () => {
     return (
         <div className={style.worksBlock}>
             <div className={`${styleContainer.container} ${style.worksContainer}`}>
-                <h2 className={style.title}>Мои проекты</h2>
+                <div className={style.title}>
+                    <h2>Мои проекты</h2>
+                    <hr className={style.line}></hr>
+                </div>
+                <div  className={style.description}>
+                    <p>Maecenas tempus nec mi et placerat. Duis at odio vitae ex gravida volutpat. Nulla finibus aliquet diam ut eleifend. Mauris consequat interdum quam. Mauris dui sapien, efficitur et cursus id, molestie fringilla turpis.</p>
+                </div>
+
                 <div className={style.works}>
                     <Project
                         title={'Название проекта'}
