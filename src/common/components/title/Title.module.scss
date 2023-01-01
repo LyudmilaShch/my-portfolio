@@ -1,0 +1,57 @@
+@import '../../../common/styles/sass/variables.scss';
+@import '../../../common/styles/sass/mixins.scss';
+
+.titleBlock {
+  text-align: center;
+  position: relative;
+  width: 66.67%;
+  .title {
+    font-weight: bold;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+
+
+    @include text(2.1875rem, $textColor, uppercase);
+
+    .line {
+      position: relative;
+      border: none;
+      width: 100px;
+      height: 4px;
+      background-color: $textColor;
+      clear: both;
+      display: block;
+      unicode-bidi: isolate;
+      margin-block-start: 0.5em;
+      margin-block-end: 0.5em;
+      margin-inline-start: auto;
+      margin-inline-end: auto;
+
+      &::before {
+        display: block;
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 4px;
+        background: $primaryColor;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .titleDescription {
+    display: block;
+    font-family: inherit;
+    color: $titleDescriptionTextColor;
+    line-height: 1.5;
+    text-align: center;
+
+  }
+}

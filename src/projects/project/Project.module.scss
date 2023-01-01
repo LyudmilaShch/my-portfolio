@@ -1,0 +1,98 @@
+@import '../../common/styles/sass/variables.scss';
+@import '../../common/styles/sass/mixins.scss';
+
+.project {
+  min-width: 405px;
+  min-height: 308px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 15px;
+  font-family: "Lato", Roboto, sans-serif;
+  font-size: 16px;
+
+  @media screen and (max-width: 1104px) {
+    min-width: 340px;
+    min-height: 250px;
+  }
+  @media screen and (max-width: 941px) {
+    min-width: 500px;
+    min-height: 350px;
+  }
+
+  @media screen and (max-width: 590px) {
+    min-width: 400px;
+    min-height: 270px;
+  }
+
+  @media screen and (max-width: 430px) {
+    min-width: 340px;
+    min-height: 220px;
+  }
+
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include text(16px, $titleTextColor, uppercase);
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: $primaryColor;
+      opacity: 0.8;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+
+    .projectTitle {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font: inherit;
+      margin: 0 0 10px 0;
+      padding: 0;
+      position: relative;
+      @include text(2rem, $titleTextColor, uppercase);
+
+      .projectTitleThin {
+        font-weight: lighter;
+      }
+    }
+
+    .description {
+      display: block;
+      margin-block-start: 1.33em;
+      margin-block-end: 1.33em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      @include text(1.15rem, $titleTextColor, uppercase);
+    }
+
+    .buttonProject {
+      border: 2px solid $bgSecondColor;
+      padding: 0.5em 1.5em;
+      font-weight: bold;
+      text-decoration: none;
+      max-height: 20px;
+      margin: 20px;
+      position: relative;
+      @include text(1.25rem, $bgSecondColor, uppercase);
+    }
+  }
+
+}
+
+
