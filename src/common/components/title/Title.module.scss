@@ -15,16 +15,18 @@
     padding: 0;
     text-align: center;
     position: relative;
+    font-size: 2.1875rem;
+    text-transform: uppercase;
 
 
-    @include text(2.1875rem, $textColor, uppercase);
+    //@include text(2.1875rem, $textColor, uppercase);
 
     .line {
       position: relative;
       border: none;
       width: 100px;
       height: 4px;
-      background-color: $textColor;
+      //background-color: $textColor;
       clear: both;
       display: block;
       unicode-bidi: isolate;

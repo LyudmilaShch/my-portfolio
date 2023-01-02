@@ -2,8 +2,8 @@
 @import '../../common/styles/sass/mixins.scss';
 
 .project {
-  min-width: 405px;
-  min-height: 308px;
+  min-width: 550px;
+  min-height: 408px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -13,8 +13,15 @@
   margin: 15px;
   font-family: "Lato", Roboto, sans-serif;
   font-size: 16px;
-
-  @media screen and (max-width: 1104px) {
+  @media screen and (max-width: 1449px) {
+    min-width: 500px;
+    min-height: 350px;
+  }
+  @media screen and (max-width: 1324px) {
+    min-width: 420px;
+    min-height: 300px;
+  }
+  @media screen and (max-width: 1124px) {
     min-width: 340px;
     min-height: 250px;
   }
@@ -22,12 +29,10 @@
     min-width: 500px;
     min-height: 350px;
   }
-
   @media screen and (max-width: 590px) {
     min-width: 400px;
     min-height: 270px;
   }
-
   @media screen and (max-width: 430px) {
     min-width: 340px;
     min-height: 220px;
@@ -49,24 +54,6 @@
       bottom: 0;
       left: 0;
       right: 0;
-    }
-
-
-    .projectTitle {
-      display: block;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-      font: inherit;
-      margin: 0 0 10px 0;
-      padding: 0;
-      position: relative;
-      @include text(2rem, $titleTextColor, uppercase);
-
-      .projectTitleThin {
-        font-weight: lighter;
-      }
     }
 
     .description {

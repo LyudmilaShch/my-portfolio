@@ -1,15 +1,17 @@
 import React from 'react';
-import style from './DistantWork.module.css'
-import styleContainer from '../common/styles/BlackContainer.module.css'
+import style from './DistantWork.module.scss'
+import styleContainer from '../common/styles/Container.module.css'
+import FirstWordDesign from "../common/components/FirstWordDesign/FirstWordDesign";
 
 const DistantWork = () => {
+
     return (
         <div className={style.mainBlock}>
             <div  className={`${styleContainer.container} ${style.container}`}>
                 <div className={style.text}>
-                   <h5>Рассматриваю варианты удаленной работы</h5>
+                   <FirstWordDesign title={"Considering remote work options"} />
                 </div>
-                <button>Нанять меня</button>
+                <a href={" "} className={style.buttonDistantWork}>hire me</a>
             </div>
         </div>
     );
