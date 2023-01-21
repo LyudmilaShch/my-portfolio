@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Skills.module.scss'
-import styleContainer from '../common/styles/Container.module.css'
+import styleContainer from '../common/styles/Container.module.scss'
 import Skill from './skill/Skill';
 import Title from "../common/components/title/Title";
 import reactIcon from "../accets/image/react.png";
@@ -11,7 +11,7 @@ import jsIcon from "../accets/image/js.png";
 const Skills = () => {
 
     return (
-        <div className={style.skillsBlock}>
+        <div className={style.skillsBlock} id="skills">
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 <Title color={'#2c3e50'}
                        title={'My skills'}

@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Projects.module.scss'
-import styleContainer from '../common/styles/Container.module.css'
+import styleContainer from '../common/styles/Container.module.scss'
 import Project from './project/Project';
 import todoImage from '../accets/image/img-03.jpg'
 import socialNetworkImage from '../accets/image/img-01.jpg'
@@ -15,7 +15,7 @@ const Projects = () => {
     };
 
     return (
-        <div className={style.projectsBlock}>
+        <div className={style.projectsBlock} id="projects">
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
                 <Title color={'#2c3e50'}
                        title={'Projects'}

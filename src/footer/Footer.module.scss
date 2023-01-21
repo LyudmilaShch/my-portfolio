@@ -1,0 +1,48 @@
+@import '../common/styles/sass/variables.scss';
+@import '../common/styles/sass/mixins.scss';
+
+.footerBlock {
+  background-color: #202020;
+
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .footerInfo {
+      padding: 80px 0 80px 0;
+
+      .text {
+        width: 100%;
+        text-align: center;
+      }
+
+      .socialIcons {
+        min-width: 280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .icon {
+          width: 20px;
+          padding-right: 10px;
+        }
+      }
+    }
+
+    .right {
+      border-top: 1px solid #464646;
+      padding: 30px 0 30px 0;
+      width: 100%;
+      text-align: center;
+      @include text(0.8125rem, #848484, none);
+    }
+
+  }
+}
+
+
+
+

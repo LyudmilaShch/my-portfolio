@@ -1,17 +1,24 @@
 import React from 'react';
-import style from './Main.module.css'
-import styleContainer from '../common/styles/Container.module.css'
+import style from './Main.module.scss'
+import Header from "../header/Header";
 
 const Main = () => {
     return (
-        <div className={style.mainBlock}>
-            <div  className={`${styleContainer.container} ${style.container}`}>
+        <div className={style.mainBlock} id="main">
+            <Header/>
+            <div className={style.container}>
                 <div className={style.greetingText}>
-                    <h1>LYUDMILA SHCHEPINA</h1>
-                    <h5>front-end разработчик</h5>
+                    <h2>front-end developer</h2>
+                    <hr className={style.line}/>
+                    <h1 className={style.thin}>Lyudmila
+                        <strong>{' Shchepina'}</strong>
+                    </h1>
                 </div>
-                <div className={style.greetingPhoto}>
 
+            </div>
+            <div className={style.arrowDownSection}>
+                <div className={style.wrapperDown}>
+                    <a href={""} className={style.arrowDown}> </a>
                 </div>
             </div>
         </div>
