@@ -10,6 +10,9 @@
   font-weight: lighter;
   background: #202020;
   left: 60%;
+  @media screen and (max-width: 550px) {
+    left: 0;
+  }
 }
 
 .sidebar.open {
@@ -31,6 +34,7 @@
 
 .nav {
   padding: 40px 40px 40px 60px;
+
 }
 
 .nav a {

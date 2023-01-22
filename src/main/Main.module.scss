@@ -18,12 +18,14 @@
   }
 
   .container {
+    height: calc(100vh - 190px);
     position: relative;
-    top: 25%;
 
     .greetingText {
       position: absolute;
-      margin-top: -0.625em;
+      top: 50%;
+      transform: translate(0, -50%);
+      //margin-top: -0.625em;
       text-align: center;
       width: 100%;
       color: white;

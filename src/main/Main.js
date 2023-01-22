@@ -14,7 +14,6 @@ const Main = () => {
                         <strong>{' Shchepina'}</strong>
                     </h1>
                 </div>
-
             </div>
             <div className={style.arrowDownSection}>
                 <div className={style.wrapperDown}>
