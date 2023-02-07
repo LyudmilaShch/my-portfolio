@@ -12,7 +12,7 @@ const DistantWork = () => {
                 <div className={style.text}>
                    <FirstWordDesign title={"Considering remote work options"} />
                 </div>
-                <Button link={"contacts"} text={'hire me'}/>
+                <Button link={"#contacts"} text={'hire me'}/>
             </div>
         </div>
     );
