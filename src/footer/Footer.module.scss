@@ -26,8 +26,13 @@
         flex-wrap: wrap;
 
         .icon {
-          width: 20px;
+          width: 25px;
+          height: 25px;
           padding-right: 10px;
+          fill: #848484;
+          &:hover{
+            fill: $primaryColor;
+          }
         }
       }
     }

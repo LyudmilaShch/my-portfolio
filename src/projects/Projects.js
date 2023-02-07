@@ -2,8 +2,9 @@ import React from 'react';
 import style from './Projects.module.scss'
 import styleContainer from '../common/styles/Container.module.scss'
 import Project from './project/Project';
-import todoImage from '../accets/image/img-03.jpg'
-import socialNetworkImage from '../accets/image/img-01.jpg'
+import todoImage from '../accets/image/todolist.png'
+import socialNetworkImage from '../accets/image/socialNetwork.png'
+import cardNetworkImage from '../accets/image/cardsNetwork.png'
 import Title from "../common/components/title/Title";
 
 const Projects = () => {
@@ -14,7 +15,7 @@ const Projects = () => {
         backgroundImage: `url(${todoImage})`,
     };
     const cardNetwork = {
-        backgroundImage: `url(${todoImage})`,
+        backgroundImage: `url(${cardNetworkImage})`,
     };
 
     return (

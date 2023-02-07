@@ -89,6 +89,9 @@
           background-color: rgba(255, 255, 255, 0.1);
           cursor: pointer;
           padding: 0.8em 5em;
+          &:hover {
+            @include text(1rem, $bgSecondColor, uppercase);
+          }
         }
       }
     }

@@ -1,7 +1,6 @@
 import React from 'react';
 import style from './Main.module.scss'
 import Header from "../header/Header";
-import mainPhoto from "../accets/image/photo.png"
 import {Button} from "../common/components/button/Button";
 
 <Button link={""} text={'hire me'}/>

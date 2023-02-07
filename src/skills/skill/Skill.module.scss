@@ -1,7 +1,6 @@
 @import '../../common/styles/sass/variables.scss';
 @import '../../common/styles/sass/mixins.scss';
 
-
 .skill {
   width: 33%;
   display: flex;
@@ -10,7 +9,22 @@
   box-sizing: border-box;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+
+  &:hover h3{
+    color: $primaryColor;
+  }
+  &:hover .circleIconParent{
+    border: 4px solid #bdc3c7;
+
+    .circleIconChild{
+      background-color: $primaryColor;
+      .icon{
+        fill: $bgColor;
+      }
+    }
+  }
 
   @media screen and (max-width: 937px) {
     min-width: 90%;
@@ -18,8 +32,8 @@
   }
 
   .circleIconParent {
-    width: calc(40% - 15px);
-    padding-bottom: calc(40% - 23px);
+    width: calc(50% - 15px);
+    padding-bottom: calc(50% - 23px);
     margin-bottom: 30px;
     border: 4px solid $primaryColor;
     transition: all 300ms ease-in-out;
@@ -28,9 +42,10 @@
     box-sizing: border-box;
     position: relative;
 
+
     .circleIconChild {
-      width: 50%;
-      padding-bottom: 50%;
+      width: 60%;
+      padding-bottom: 60%;
       border: 0;
       background-color: #bdc3c7;
       border-radius: 120%;
@@ -41,12 +56,15 @@
       transform: translate(-50%, -50%);
       display: block;
       box-sizing: border-box;
+      text-align:center;
       .icon{
         width: 60%;
+        fill: $textColor;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        display: inline-block;
       }
     }
   }
