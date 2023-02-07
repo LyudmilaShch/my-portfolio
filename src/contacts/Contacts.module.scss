@@ -90,7 +90,7 @@
           cursor: pointer;
           padding: 0.8em 5em;
           @media screen and (max-width: 400px) {
-            margin: 0;
+            margin: 0 0 20px 0;
           }
           &:hover {
             @include text(1rem, $bgSecondColor, uppercase);
