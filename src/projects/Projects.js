@@ -13,30 +13,38 @@ const Projects = () => {
     const todolistNetwork = {
         backgroundImage: `url(${todoImage})`,
     };
+    const cardNetwork = {
+        backgroundImage: `url(${todoImage})`,
+    };
 
     return (
         <div className={style.projectsBlock} id="projects">
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
                 <Title color={'#2c3e50'}
                        title={'Projects'}
-                       titleDescription={
-                           'Maecenas tempus nec mi et placerat. Duis at odio vitae ex gravida volutpat. Nulla finibus aliquet\n' +
-                           '                    diam ut eleifend. Mauris consequat interdum quam. Mauris dui sapien, efficitur et cursus id,\n' +
-                           '                    molestie fringilla turpis.'
-                       }/>
-
+                      />
                 <div className={style.projects}>
                     <Project
                         style={socialNetwork}
                         title={'Social network'}
-                        description={'short description'}
+                        description={'TS, Redux, RestAPI, Thunk,ANT Design, Unit Tests'}
+                        link={'https://github.com/LyudmilaShch/Samurai_way_TS'}
                     />
 
                     <Project
                         style={todolistNetwork}
                         title={'Todolist'}
-                        description={'short description'}
+                        description={'TS, Redux, RestAPI, Thunk,Material UI, Unit Tests'}
+                        link={'https://github.com/LyudmilaShch/todolist-ts-main'}
                     />
+
+                    <Project
+                        style={cardNetwork}
+                        title={'Card learning'}
+                        description={'It was a command work. App for learning some cards'}
+                        link={'https://github.com/AlexKazakq/friday-project-cards'}
+                    />
+
                 </div>
 
             </div>

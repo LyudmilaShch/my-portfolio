@@ -1,0 +1,17 @@
+@import '../../../common/styles/sass/variables.scss';
+@import '../../../common/styles/sass/mixins.scss';
+
+.btn {
+  border: 2px solid $bgSecondColor;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 20px;
+  padding: 0.5em 3em;
+  position: relative;
+  @include text(1.25rem, $bgSecondColor, uppercase);
+  &:hover {
+    border: 2px solid $secondPrimaryColor;
+    background-color: $secondPrimaryColor;
+    @include text(1.25rem, $bgSecondColor, uppercase);
+  }
+}

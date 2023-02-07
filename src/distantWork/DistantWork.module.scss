@@ -1,5 +1,6 @@
 @import '../common/styles/sass/variables.scss';
 @import '../common/styles/sass/mixins.scss';
+@import '../common/components/button/Button.module';
 
 .mainBlock {
   background-color: $primaryColor;
@@ -19,16 +20,17 @@
       @include text(2.75rem, $titleTextColor, uppercase);
     }
 
-    .buttonDistantWork {
-      border: 3px solid #fff;;
-      padding: 1em 3em;
-      font-weight: bold;
-      text-decoration: none;
-      max-height: 20px;
-      max-width: 100%;
-      margin: 20px;
-      position: relative;
-      @include text(1.25rem, $bgSecondColor, uppercase);
+    .buttonDistantWork[type="submit"] {
+      @extend .btn;
+      //border: 3px solid #fff;;
+      //padding: 1em 3em;
+      //font-weight: bold;
+      //text-decoration: none;
+      //max-height: 20px;
+      //max-width: 100%;
+      //margin: 20px;
+      //position: relative;
+      //@include text(1.25rem, $bgSecondColor, uppercase);
     }
 
   }

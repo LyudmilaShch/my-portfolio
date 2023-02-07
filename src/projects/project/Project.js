@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import style from './Project.module.scss'
 import FirstWordDesign from "../../common/components/FirstWordDesign/FirstWordDesign";
+import {Button} from "../../common/components/button/Button";
 
 
 const Project = (props) => {
@@ -24,8 +25,9 @@ const Project = (props) => {
                     <div className={style.text}>
                         <FirstWordDesign title={props.title}/>
                         <span className={style.description}>{props.description}</span>
-                        <a href={" "}
-                           className={style.buttonProject}>More</a>
+                        <Button link={props.link} text={'More'}/>
+                        {/*<a href={props.link}*/}
+                        {/*   className={style.buttonProject}>More</a>*/}
                     </div>
                 ) : (
                     <>

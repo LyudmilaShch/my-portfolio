@@ -8,13 +8,7 @@ const Contacts = () => {
         <div className={style.contactsBlock} id="contacts">
             <div className={`${styleContainer.container} ${style.contactsContainer}`}>
                 <Title color={'#fff'}
-                       title={'Contacts'}
-                       titleDescription={
-                           'Maecenas tempus nec mi et placerat. Duis at odio vitae ex gravida volutpat. Nulla finibus aliquet\n' +
-                           '                    diam ut eleifend. Mauris consequat interdum quam. Mauris dui sapien, efficitur et cursus id,\n' +
-                           '                    molestie fringilla turpis.'
-                       }/>
-
+                       title={'Contacts'}/>
                 <div className={style.container}>
                     <form className={style.form}>
                         <div className={style.inputsLine}>
@@ -26,7 +20,7 @@ const Contacts = () => {
                             <input className={style.input} placeholder={'Website'}></input>
                         </div>
                             <textarea className={style.textarea} placeholder={'Message'}></textarea>
-                        <button className={style.sendMessage}>Send message</button>
+                        <button type="submit">Send message</button>
                     </form>
                 </div>
             </div>

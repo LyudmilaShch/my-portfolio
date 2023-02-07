@@ -1,6 +1,9 @@
+@import '../common/styles/sass/variables.scss';
 .header {
     height: 60px;
     width: 100%;
     color: white;
-    position: relative;
+    position: fixed;
+    background-color: rgba(33, 194, 248, 0.76);
+    z-index: 999999;
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import style from './DistantWork.module.scss'
 import styleContainer from '../common/styles/Container.module.scss'
 import FirstWordDesign from "../common/components/FirstWordDesign/FirstWordDesign";
+import {Button} from "../common/components/button/Button";
 
 const DistantWork = () => {
 
@@ -11,7 +12,7 @@ const DistantWork = () => {
                 <div className={style.text}>
                    <FirstWordDesign title={"Considering remote work options"} />
                 </div>
-                <a href={" "} className={style.buttonDistantWork}>hire me</a>
+                <Button link={"contacts"} text={'hire me'}/>
             </div>
         </div>
     );

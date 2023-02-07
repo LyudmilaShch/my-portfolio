@@ -4,8 +4,11 @@ import styleContainer from '../common/styles/Container.module.scss'
 import Skill from './skill/Skill';
 import Title from "../common/components/title/Title";
 import reactIcon from "../accets/image/react.png";
-import cssIcon from "../accets/image/css.png";
+import reduxIcon from "../accets/image/redux.png";
 import jsIcon from "../accets/image/js.png";
+import sassIcon from "../accets/image/sass.png";
+import gitIcon from "../accets/image/git.png";
+import storybookIcon from "../accets/image/storybook.svg";
 
 
 const Skills = () => {
@@ -15,24 +18,32 @@ const Skills = () => {
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 <Title color={'#2c3e50'}
                        title={'My skills'}
-                       titleDescription={
-                           'Maecenas tempus nec mi et placerat. Duis at odio vitae ex gravida volutpat. Nulla finibus aliquet\n' +
-                           '                    diam ut eleifend. Mauris consequat interdum quam. Mauris dui sapien, efficitur et cursus id,\n' +
-                           '                    molestie fringilla turpis.'
-                       }/>
+                      />
                 <div className={style.skills}>
                     <Skill
                         icon={reactIcon}
                         title={'React'}
-                        description={'Maecenas sed laoreet urna. Praesent eget tristique tortor. Suspendisse consequat sed turpis in mattis.'}/>
+                        description={'Class and functional components, components life-cycle methods, props, hooks, HOCs'}/>
                     <Skill
                         icon={jsIcon}
-                        title={'JavaScript'}
-                        description={'Maecenas sed laoreet urna. Praesent eget tristique tortor. Suspendisse consequat sed turpis in mattis.'}/>
+                        title={'JS/TS'}
+                        description={'Common CSS, variables, mixins, functions, pseudo-classes, pseudo-elements, media queries'}/>
                     <Skill
-                        icon={cssIcon}
-                        title={'CSS'}
-                        description={'Maecenas sed laoreet urna. Praesent eget tristique tortor. Suspendisse consequat sed turpis in mattis.'}/>
+                        icon={reduxIcon}
+                        title={'Redux'}
+                        description={'Flux-concept data flow, reducer, dispatch, redux-thunk, redux-toolkit'}/>
+                    <Skill
+                        icon={sassIcon}
+                        title={'SASS'}
+                        description={'Common CSS, variables, mixins, functions, pseudo-classes, pseudo-elements, media queries'}/>
+                    <Skill
+                        icon={gitIcon}
+                        title={'Git'}
+                        description={'Creating new repositories, push- and pull-requets, merge, repos cloning'}/>
+                    <Skill
+                        icon={storybookIcon}
+                        title={'Storybook'}
+                        description={'Testing components and modules, decorators'}/>
                 </div>
 
             </div>
