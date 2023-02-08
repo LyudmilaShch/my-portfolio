@@ -1,9 +1,8 @@
 import React from 'react';
 import style from './Main.module.scss'
 import Header from "../header/Header";
-import {Button} from "../common/components/button/Button";
+import CV from "../accets/files/cv.pdf";
 
-<Button link={""} text={'hire me'}/>
 const Main = () => {
     return (
         <div className={style.mainBlock} id="main">
@@ -15,14 +14,17 @@ const Main = () => {
                     <h1 className={style.thin}>Lyudmila
                         <strong>{' Shchepina'}</strong>
                     </h1>
-                    <Button link={"#contacts"} text={'hire me'}/>
+                    <div className={style.mainButtons}>
+                        <a href={CV} download className={style.saveCVButton}>Download
+                            CV</a>
+                        <a href={"#contacts"} className={style.hireMeButton}>hire me</a>
+                    </div>
+
                 </div>
             </div>
             <div className={style.arrowDownSection}>
-                <a href={"#skills"}>
-                <div className={style.wrapperDown}>
+                <a href={"#skills"} className={style.wrapperDown}>
                     <div className={style.arrowDown}/>
-                </div>
                 </a>
             </div>
 
