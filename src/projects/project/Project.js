@@ -26,8 +26,6 @@ const Project = (props) => {
                         <FirstWordDesign title={props.title}/>
                         <span className={style.description}>{props.description}</span>
                         <Button link={props.link} text={'More'}/>
-                        {/*<a href={props.link}*/}
-                        {/*   className={style.buttonProject}>More</a>*/}
                     </div>
                 ) : (
                     <>
