@@ -1,36 +1,58 @@
 @import '../common/styles/sass/variables.scss';
 @import '../common/styles/sass/mixins.scss';
+@import '../common/components/button/Button.module';
 
 .nav {
-  width: 400px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
-  margin-top: 10px;
   top: 50%;
   transform: translateY(-50%);
   float: right;
-
 
   @media screen and (max-width: 900px) {
     display: block;
     position: fixed;
     width: 100%;
     height: 60px;
-    top: 20px;
+    top: 30px;
     left: 15px;
     margin-left: -15px;
     margin-right: -15px;
-    min-height: 60px;
     background: $primaryColor;
     z-index: 99999;
   }
+  .changeLngButtonGroup{
 
+    .buttonNotActive{
+      cursor: pointer;
+      @include text(0.8rem, $bgSecondColor, uppercase);
+      margin: 0;
+      border: 1px solid $bgSecondColor;
+      background-color: transparent;
+      padding: 0.5em 1em;
+    }
+    .buttonActive {
+      cursor: pointer;
+      padding: 0.5em 1em;
+      border: 2px solid $secondPrimaryColor;
+      background-color: $secondPrimaryColor;
+      @include text(0.8rem, $bgSecondColor, uppercase);
+    }
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  .link{
+    margin-right: 25px;
+  }
   a {
     text-decoration: none;
     color: white;
     cursor: pointer;
-    @include text(20px, $titleTextColor, none);
+    @include text(18px, $titleTextColor, none);
     @media screen and (max-width: 900px) {
       display: none;
     }
@@ -41,7 +63,6 @@
   }
   .active {
     color: $textColor;
-
   }
 
   .navTrigger {
@@ -77,6 +98,5 @@
       display: inline-block;
     }
   }
-
 }
 

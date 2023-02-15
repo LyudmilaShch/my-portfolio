@@ -10,45 +10,47 @@ import { ReactComponent as TypescriptIcon } from "../accets/image/typescript.svg
 import { ReactComponent as ReduxIcon } from "../accets/image/redux.svg";
 import { ReactComponent as SassIcon } from "../accets/image/sass.svg";
 import { ReactComponent as GitIcon } from "../accets/image/git.svg";
+import {useTranslation} from "react-i18next";
 
 const Skills = () => {
+    const {t} = useTranslation();
 
     return (
         <div className={style.skillsBlock} id="skills">
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 <Title color={'#2c3e50'}
-                       title={'My skills'}
+                       title={t('My skills')}
                       />
                 <div className={style.skills}>
                     <Skill
                         title={'React'}
-                        description={'Class and functional components, components life-cycle methods, props, hooks, HOCs'}>
+                        description={t('description React')}>
                         <ReactIcon  className={styleChildren.icon}/>
                     </Skill>
 
                     <Skill
                         title={'JS/TS'}
-                        description={'Common CSS, variables, mixins, functions, pseudo-classes, pseudo-elements, media queries'}>
+                        description={t('description JS/TS')}>
                         <TypescriptIcon  className={styleChildren.icon}/>
                     </Skill>
                     <Skill
                         title={'Redux'}
-                        description={'Flux-concept data flow, reducer, dispatch, redux-thunk, redux-toolkit'}>
+                        description={t('description Redux')}>
                          <ReduxIcon  className={styleChildren.icon}/>
                     </Skill>
                     <Skill
                         title={'SASS'}
-                        description={'Common CSS, variables, mixins, functions, pseudo-classes, pseudo-elements, media queries'}>
+                        description={t('description SASS')}>
                          <SassIcon  className={styleChildren.icon}/>
                     </Skill>
                     <Skill
                         title={'Git'}
-                        description={'Creating new repositories, push- and pull-requets, merge, repos cloning'}>
+                        description={t('description Git')}>
                          <GitIcon  className={styleChildren.icon}/>
                     </Skill>
                     <Skill
                         title={'Storybook'}
-                        description={'Testing components and modules, decorators'}>
+                        description={t('description Storybook')}>
                          <StorybookIcon  className={styleChildren.icon}/>
                     </Skill>
                 </div>

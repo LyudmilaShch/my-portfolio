@@ -4,8 +4,10 @@ import styleContainer from '../common/styles/Container.module.scss'
 import Title from "../common/components/title/Title";
 import {useFormik} from "formik";
 import axios from "axios";
+import {useTranslation} from "react-i18next";
 
 const Contacts = () => {
+    const {t} = useTranslation();
     const [isSendMessage, setIsSendMessage] = useState(false)
     const formik = useFormik({
         initialValues: {
@@ -33,30 +35,29 @@ const Contacts = () => {
             <div className={style.contactsBlock} id="contacts">
                 <div className={`${styleContainer.container} ${style.contactsContainer}`}>
                     <Title color={'#fff'}
-                           title={'Contacts'}/>
+                           title={t('Contacts title')}/>
                     <div className={style.container}>
                         {isSendMessage
                             ? <div className={style.isSendMessage}>
-                                <p>Thanks. Your message ha been sent. I will contacts you
-                                    shortly</p>
-                                <button onClick={()=>{setIsSendMessage(false)}}>Ok</button>
+                                <p>{t('Message has been sent')}</p>
+                                <button onClick={()=>{setIsSendMessage(false)}}>{t('Button ok')}</button>
                             </div>
                             : <form className={style.form} id="contacts-form" onSubmit={formik.handleSubmit}>
                                 <div className={style.inputsLine}>
                                     <input className={style.input}
-                                           placeholder={'Name'} {...formik.getFieldProps("name")}/>
+                                           placeholder={t('Name')} {...formik.getFieldProps("name")}/>
                                     <input className={style.input}
-                                           placeholder={'Phone'} {...formik.getFieldProps("phone")}/>
+                                           placeholder={t('Phone')} {...formik.getFieldProps("phone")}/>
                                 </div>
                                 <div className={style.inputsLine}>
-                                    <input className={style.input} placeholder={'Email'}
+                                    <input className={style.input} placeholder={t('Email')}
                                            type="email" {...formik.getFieldProps("email")}/>
                                     <input className={style.input}
-                                           placeholder={'Website'} {...formik.getFieldProps("website")}/>
+                                           placeholder={t('Website')} {...formik.getFieldProps("website")}/>
                                 </div>
                                 <textarea className={style.textarea}
-                                          placeholder={'Message'} {...formik.getFieldProps("message")}/>
-                                <button type="submit">Send message</button>
+                                          placeholder={t('Message')} {...formik.getFieldProps("message")}/>
+                                <button type="submit">{t('Send message')}</button>
                             </form>
                         }
                     </div>
