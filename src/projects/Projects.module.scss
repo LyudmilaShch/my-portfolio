@@ -13,15 +13,13 @@
   .projectsContainer {
     display: flex;
     justify-content: center;
+    align-items: center;
 
     .projects {
-      width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       flex-wrap: wrap;
-      @media screen and (max-width: 1050px) {
-        justify-content: center;
-      }
+      margin-bottom: 15px;
     }
   }
   &::after {
