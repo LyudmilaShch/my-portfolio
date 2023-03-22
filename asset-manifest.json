@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.3b89a0a4.css",
-    "main.js": "/my-portfolio/static/js/main.65a9353d.js",
+    "main.css": "/my-portfolio/static/css/main.09f13d46.css",
+    "main.js": "/my-portfolio/static/js/main.bc893281.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/cv.pdf": "/my-portfolio/static/media/cv.aa4b3d1cd526e0e1e8da.pdf",
     "static/media/cardsNetwork.png": "/my-portfolio/static/media/cardsNetwork.0cadcb76a9baaefef225.png",
+    "static/media/notes.png": "/my-portfolio/static/media/notes.87730b45960a5fa5e1ea.png",
     "static/media/main.jpg": "/my-portfolio/static/media/main.239a3595565affce8065.jpg",
     "static/media/todolist.png": "/my-portfolio/static/media/todolist.fe81fad40eec1a3d3e4d.png",
     "static/media/socialNetwork.png": "/my-portfolio/static/media/socialNetwork.ed055d490f2bc34b32dd.png",
+    "static/media/calculator.png": "/my-portfolio/static/media/calculator.46c04d7f93a549aae7a8.png",
     "static/media/codewars.svg": "/my-portfolio/static/media/codewars.596cef4d529d0c3fad72abfa9530e663.svg",
     "static/media/sass.svg": "/my-portfolio/static/media/sass.0db42890226d2d06bae18652b5e1c34a.svg",
     "static/media/react.svg": "/my-portfolio/static/media/react.fcca8017310f0cf8ffba4dbf899f2779.svg",
@@ -19,12 +21,12 @@
     "static/media/typescript.svg": "/my-portfolio/static/media/typescript.311ee1092630d782a36b86e636cd7a81.svg",
     "index.html": "/my-portfolio/index.html",
     "static/media/storybook.svg": "/my-portfolio/static/media/storybook.caaa331c09f679ef05d3ab1662783d83.svg",
-    "main.3b89a0a4.css.map": "/my-portfolio/static/css/main.3b89a0a4.css.map",
-    "main.65a9353d.js.map": "/my-portfolio/static/js/main.65a9353d.js.map",
+    "main.09f13d46.css.map": "/my-portfolio/static/css/main.09f13d46.css.map",
+    "main.bc893281.js.map": "/my-portfolio/static/js/main.bc893281.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b89a0a4.css",
-    "static/js/main.65a9353d.js"
+    "static/css/main.09f13d46.css",
+    "static/js/main.bc893281.js"
   ]
 }
